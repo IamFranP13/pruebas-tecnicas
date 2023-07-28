@@ -1,0 +1,7 @@
+<div class="p-4 bg-gray-100 rounded-md" *ngIf="readingList.length > 0">
+    <h2 class="text-xl font-bold mb-4">Reading List</h2>
+    <div class="grid grid-cols-7 gap-4">
+      <book-component [book]="book" (click)="removeFromList(book)" *ngFor="let book of readingList"></book-component>
+    </div>
+  </div>
+  
